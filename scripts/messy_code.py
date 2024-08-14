@@ -25,14 +25,17 @@ matrix = RGBMatrix(options = options)
 offscreen_canvas = matrix.CreateFrameCanvas()
 
 font_normal = graphics.Font()
-font_normal.LoadFont("rpi-rgb-led-matrix/fonts/bfvlowermargen.bdf")
-
 font_big = graphics.Font()
-font_big.LoadFont("rpi-rgb-led-matrix/fonts/FixedBold-13.bdf")
-
 font_small = graphics.Font()
 
-font_small.LoadFont("rpi-rgb-led-matrix/fonts/bfvlowermargen.bdf")
+try:
+    font_normal.LoadFont("rpi-rgb-led-matrix/fonts/bfvlowermargen.bdf")
+    font_big.LoadFont("rpi-rgb-led-matrix/fonts/FixedBold-13.bdf")
+    font_small.LoadFont("rpi-rgb-led-matrix/fonts/bfvlowermargen.bdf")
+except:
+    font_normal.LoadFont("fonts/bfvlowermargen.bdf")
+    font_big.LoadFont("fonts/FixedBold-13.bdf")
+    font_small.LoadFont("fonts/bfvlowermargen.bdf")
 
 # real color =     textColor = graphics.Color(255, 1, 200) #color of the text
 
