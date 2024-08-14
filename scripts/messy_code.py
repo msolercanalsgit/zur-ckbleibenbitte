@@ -97,7 +97,8 @@ while True:
         min_1 = graphics.DrawText(offscreen_canvas, font_small, 140, 29, textColor, in_x_min_text_1)
 
         offscreen_canvas = matrix.SwapOnVSync(offscreen_canvas)
-    except:
+    except Exception as error:
+        print(error)
         texto_conectando = 'Connecting to Wifi.Wait 60 sec.'
         connectando_imprimir= graphics.DrawText(offscreen_canvas, font_small, 3, 14, textColor, texto_conectando)
 
