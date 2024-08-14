@@ -95,13 +95,10 @@ def main():
 
             offscreen_canvas = matrix.SwapOnVSync(offscreen_canvas)
         except:
-            texto_conectando = 'Connecting to wifi.Wait 60 sec.'
+            texto_conectando = 'Connecting to Wifi.Wait 60 sec.'
             connectando_imprimir= graphics.DrawText(offscreen_canvas, font_small, 3, 14, textColor, texto_conectando)
 
             offscreen_canvas = matrix.SwapOnVSync(offscreen_canvas)
 
         #print(pos_test)
         time.sleep(60)
-
-
-main()
