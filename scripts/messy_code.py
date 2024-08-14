@@ -39,7 +39,7 @@ except:
 
 # real color =     textColor = graphics.Color(255, 1, 200) #color of the text
 
-textColor = graphics.Color(1, 1, 200) #color of the text
+textColor = graphics.Color(255, 1, 200) #color of the text
 
 
 
