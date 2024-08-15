@@ -18,6 +18,7 @@ options.disable_hardware_pulsing = 1
 options.hardware_mapping = 'adafruit-hat'
 options.pwm_lsb_nanoseconds = 100
 
+
 #options.isolcpus = 3
 matrix = RGBMatrix(options = options)
 
